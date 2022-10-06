@@ -6,6 +6,6 @@ function example (a, b, c){
 
 /*funcion de expresión*/
 
-example2 = function(a, b, c){
-    return a+b+c
+example2 = function(a, b){
+    return a+b
 }

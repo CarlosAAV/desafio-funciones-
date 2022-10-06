@@ -1,16 +1,24 @@
-let colorOne = "#EDDFB3";
-let colorTwo = "#D8CCA3";
-let colorTree = "#B09B71";
-let colorFour = "#87805E";
+let color;
+
 
 document.addEventListener('keydown', function (event) {
     if (event.key === 'a') {
-        document.getElementById('box1').style.backgroundColor = colorOne
+       color = "#EDDFB3";
     } else if (event.key === 's') {
-        document.getElementById('box2').style.backgroundColor = colorTwo
+       color = "#D8CCA3"
     } else if (event.key === 'd') {
-        document.getElementById('box3').style.backgroundColor = colorTree
-    } else if (event.key === 'f') {
-        document.getElementById('box4').style.backgroundColor = colorFour
-    }
+      color = "#B09B71"
+    } 
+})
+ document.querySelector("#box1").addEventListener("click", function(event){
+    event.target.style.backgroundColor = color
+})
+document.querySelector("#box2").addEventListener("click", function(event){
+    event.target.style.backgroundColor = color
+})
+document.querySelector("#box3").addEventListener("click", function(event){
+    event.target.style.backgroundColor = color
+})
+document.querySelector("#box4").addEventListener("click", function(event){
+    event.target.style.backgroundColor = color
 })
